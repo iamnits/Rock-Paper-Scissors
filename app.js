@@ -20,10 +20,11 @@ function playGame()
         else if(result.substring(4,8) === "lose")
             scoreComputer++;
     }
-    if(scorePlayer > scoreComputer)
-        console.log("Player wins by " + scorePlayer - scoreComputer + " points")
-    else if(scoreComputer > scorePlayer)
-        console.log("Computer wins by " + scoreComputer - scorePlayer + " points");
+    let scoreDifference = Math.abs(scorePlayer - scoreComputer);
+    if (scorePlayer > scoreComputer)
+        console.log("Player wins by " + scoreDifference + " points");
+    else if (scoreComputer > scorePlayer)
+        console.log("Computer wins by " + scoreDifference + " points");
     else
         console.log("Tie");
     function RPS(playerSelection, computerSelection)
