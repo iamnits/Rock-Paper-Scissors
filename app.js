@@ -15,7 +15,6 @@ function playGame()
         console.log("You choose: " + playerSelection + "\n Computer chooses: " + computerSelection);
         let result = RPS(playerSelection, computerSelection);
         console.log(result);
-        console.log(result.substring(4,8));
         if(result.substring(4,8) === "win!")
             scorePlayer++;
         else if(result.substring(4,8) === "lose")
